@@ -1,0 +1,43 @@
+{
+  "name": "@tombatossals/iberdrola-opendata",
+  "version": "0.0.1",
+  "description": "Take control of you energy consumption data from Iberdrola",
+  "main": "index.js",
+  "scripts": {
+    "collect": "babel-node src/collect.js",
+    "import": "babel-node src/import-influxdb.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tombatossals/iberdrola-opendata.git"
+  },
+  "keywords": [
+    "node",
+    "iberdrola",
+    "energy",
+    "influx"
+  ],
+  "author": "David Rubert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tombatossals/iberdrola-opendata/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4"
+  },
+  "dependencies": {
+    "commander": "^2.19.0",
+    "influx": "^5.0.7",
+    "moment": "^2.17.1",
+    "node-fetch": "^2.3.0",
+    "url-join": "^4.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}

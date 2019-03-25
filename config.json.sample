@@ -1,0 +1,9 @@
+{
+  "iberdrola": {
+    "username": "",
+    "password": ""
+  },
+  "influxdb": {
+    "conn": "http://username:password@host:port/database"
+  }
+}
