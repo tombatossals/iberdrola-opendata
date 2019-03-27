@@ -87,13 +87,13 @@ class Iberdrola {
   const config = require("../config.json").iberdrola;
 
   program
-    .option("-d, --date [value]")
+    .option("-d, --date <date>")
     .option("--all")
     .parse(process.argv);
 
   const username = config.username;
   const password = config.password;
-  const date = program.args[0] || moment().subtract(2, "days").format("DD-MM-YYYY");
+  const date = program.args[0] || moment().format("DD-MM-YYYY");
 
   const iberdrola = new Iberdrola(username, password);
   await iberdrola.login();
